@@ -1,4 +1,5 @@
 Non-cancer-related pathogenic germline variants and expression consequences in ten-thousand cancer genomes
+
 [Citation of our manuscript after published]
 
 Code for the analysis in this project.
@@ -23,6 +24,9 @@ Extract information of NC P/LPs for genes of interest to generate the format req
 
 
 
+
+
+
 ./GeneralFunctions
 
 Functions used in this analysis.
@@ -40,6 +44,9 @@ Plots for the frequency of NC P/LP carriers and count of NC P/LPs across ancestr
 Distribution_for_genes.R
 
 Plots for the frequency/count of NC P/LP carriers in each ancestry among the ACMG 59 genes and the top 10% genes (ranked by sums of all defined ancestry frequencies, excluding Mix and Other).
+
+
+
 
 
 
@@ -64,6 +71,9 @@ Count/Proportion of sample-variants across expression splits vs predicted varian
 PlotPercentileExp_DiffExpSplitCount_GeneInfo.R
 
 Detailed information for sample-variants of for genes whose expression is significantly/suggestively impacted by NC P/LPs or enriched with significant ASE variants.
+
+
+
 
 
 

@@ -2,7 +2,7 @@
 
 [Citation of our manuscript after published]
 
-Code for the analysis in this project.
+Code for the analysis in this project.<br /><br />
 
 **./AlleleSpecificExpression**
 
@@ -22,14 +22,16 @@ Plots/Files for distribution of NC P/LPs with distinct ASE enrichment status acr
 
 Extract information of NC P/LPs for genes of interest to generate the format required by online lolliplots software ProteinPaint at https://proteinpaint.stjude.org/.
 
-
-
-
+<br /><br /><br />
 
 
 **./GeneralFunctions**
 
 Functions used in this analysis.
+
+<br /><br /><br />
+
+
 
 **./VariantDistributionAcrossAncestries**
 
@@ -45,7 +47,7 @@ Plots for the frequency of NC P/LP carriers and count of NC P/LPs across ancestr
 
 Plots for the frequency/count of NC P/LP carriers in each ancestry among the ACMG 59 genes and the top 10% genes (ranked by sums of all defined ancestry frequencies, excluding Mix and Other).
 
-
+<br /><br /><br />
 
 
 
@@ -72,7 +74,7 @@ Count/Proportion of sample-variants across expression splits vs predicted varian
 
 Detailed information for sample-variants of for genes whose expression is significantly/suggestively impacted by NC P/LPs or enriched with significant ASE variants.
 
-
+<br /><br /><br />
 
 
 

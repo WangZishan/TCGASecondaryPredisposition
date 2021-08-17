@@ -1,8 +1,8 @@
-TCGASecondaryPredisposition
 Non-cancer-related pathogenic germline variants and expression consequences in ten-thousand cancer genomes
 [Citation of our manuscript after published]
 
 Code for the analysis in this project.
+
 ./AlleleSpecificExpression
 ASE_basic.R
 Identification of rare NC P/LPs associated with allele specific expression (ASE).

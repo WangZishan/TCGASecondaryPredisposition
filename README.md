@@ -4,12 +4,16 @@ Non-cancer-related pathogenic germline variants and expression consequences in t
 Code for the analysis in this project.
 
 ./AlleleSpecificExpression
+
 ASE_basic.R
 Identification of rare NC P/LPs associated with allele specific expression (ASE).
+
 ASE_Gene_Enrichment.R
 Gene enrichment analysis for NC P/LPs showing significant ASE
+
 ASE_MultiVars.R
 Plots/Files for distribution of NC P/LPs with distinct ASE enrichment status across predicted variant function classes.
+
 GeneVariant_Distribution.R
 Extract information of NC P/LPs for genes of interest to generate the format required by online lolliplots software ProteinPaint at https://proteinpaint.stjude.org/.
 

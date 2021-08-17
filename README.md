@@ -1,10 +1,10 @@
-**Non-cancer-related pathogenic germline variants and expression consequences in ten-thousand cancer genomes**
+# **Non-cancer-related pathogenic germline variants and expression consequences in ten-thousand cancer genomes**
 
 [Citation of our manuscript after published]
 
 Code for the analysis in this project.<br /><br />
 
-**./AlleleSpecificExpression**
+## **./AlleleSpecificExpression**
 
 **ASE_basic.R**
 
@@ -25,7 +25,7 @@ Extract information of NC P/LPs for genes of interest to generate the format req
 <br /><br /><br />
 
 
-**./GeneralFunctions**
+## **./GeneralFunctions**
 
 Functions used in this analysis.
 
@@ -33,7 +33,7 @@ Functions used in this analysis.
 
 
 
-**./VariantDistributionAcrossAncestries**
+## **./VariantDistributionAcrossAncestries**
 
 **AR.R**
 
@@ -52,7 +52,7 @@ Plots for the frequency/count of NC P/LP carriers in each ancestry among the ACM
 
 
 
-**./VariantImpactOnExp**
+## **./VariantImpactOnExp**
 
 **VariantImpactOnExp.R**
 
@@ -79,11 +79,11 @@ Detailed information for sample-variants of for genes whose expression is signif
 
 
 
-**./gnomad/bcftools**
+## **./gnomad/bcftools**
 
 Command of bcftools to extract information of variant of interests from gnomad dataset.
 
-**./gnomad/ancestry_variant_distribution**
+## **./gnomad/ancestry_variant_distribution**
 
 **count.R**
 
@@ -93,7 +93,7 @@ Variant count of predisposing variants in the matched gnomAD ancestry (European 
 
 (Significance of) Correlations of variant frequencies in the matched ancestries between TCGA and gnomAD.
 
-**./gnomad/bcftools_process**
+## **./gnomad/bcftools_process**
 
 **process.R**
 

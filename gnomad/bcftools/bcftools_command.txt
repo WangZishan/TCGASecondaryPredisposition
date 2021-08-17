@@ -1,0 +1,3 @@
+bcftools view /Users/kuanlab/Downloads/gnomad/gnomad.exomes.r2.1.1.sites.vcf.bgz -R /Users/kuanlab/Downloads/gnomad/variant_all_nochr.bed -O v -o /Users/kuanlab/Downloads/gnomad/variant_all_nochr.vcf
+
+bcftools view /sc/arion/projects/DiseaseGeneCell/Huang_lab_project/TCGASecondaryPredisposition/analysis/data/gnomad/bcftools/gnomad.exomes.r2.1.1.sites.vcf.bgz -R /sc/arion/projects/DiseaseGeneCell/Huang_lab_project/TCGASecondaryPredisposition/analysis/data/gnomad/bcftools/VariantEqualPos.bed -O v -o /sc/arion/projects/DiseaseGeneCell/Huang_lab_project/TCGASecondaryPredisposition/analysis/data/gnomad/bcftools/VariantEqualPos.vcf

@@ -1,6 +1,6 @@
 # **Non-cancer-related pathogenic germline variants and expression consequences in ten-thousand cancer genomes**
 
-[Citation of our manuscript after published]
+[Citation of our manuscript if help you https://link.springer.com/article/10.1186/s13073-021-00964-1]
 
 Code for the analysis in this project.<br /><br />
 

@@ -81,7 +81,7 @@ Comparison of TCGA variant frequencies with the Genome Aggregation Database (gno
 
 ## Requirements
 
-- **R** (≥ 3.6)
+- **R** 
 - Standard Bioconductor and CRAN packages for genomic analysis and visualization
 
 ---

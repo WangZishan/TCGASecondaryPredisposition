@@ -34,14 +34,14 @@ Analysis of allele-specific expression associated with rare NC P/LP variants.
 
 | Script | Description |
 |--------|-------------|
-| `ASE_basic.R` | Identify rare NC P/LPs associated with significant allele-specific expression |
-| `ASE_Gene_Enrichment.R` | Gene-level enrichment analysis for NC P/LPs exhibiting significant ASE |
-| `ASE_MultiVars.R` | Distribution of NC P/LPs with distinct ASE enrichment status across predicted variant functional classes |
-| `GeneVariant_Distribution.R` | Format NC P/LP annotations for lollipop plot visualization via [ProteinPaint](https://proteinpaint.stjude.org/) |
+| `ASE_basic.R` | Identification of rare NC P/LPs associated with allele specific expression (ASE). |
+| `ASE_Gene_Enrichment.R` | Gene enrichment analysis for NC P/LPs showing significant ASE. |
+| `ASE_MultiVars.R` | Plots/Files for distribution of NC P/LPs with distinct ASE enrichment status across predicted variant function classes. |
+| `GeneVariant_Distribution.R` | Extract information of NC P/LPs for genes of interest to generate the format required by online lolliplots software [ProteinPaint](https://proteinpaint.stjude.org/). |
 
 ### `GeneralFunctions/`
 
-Shared utility and helper functions used throughout the analyses, including statistical routines, column averaging, and global aesthetic settings for plots.
+Functions used in this analysis.
 
 ### `VariantDistributionAcrossAncestries/`
 
@@ -49,9 +49,9 @@ Cross-ancestry characterization of NC P/LP carrier frequencies and variant count
 
 | Script | Description |
 |--------|-------------|
-| `AR.R` | Carrier frequency and variant counts for autosomal recessive (AR) and autosomal dominant (AD) genes across ancestries |
-| `Distribution_for_ACMG_classification.R` | NC P/LP carrier frequencies and variant counts stratified by ACMG classification across ancestries |
-| `Distribution_for_genes.R` | Per-ancestry carrier frequencies for ACMG 59 genes and the top 10% of genes ranked by aggregate ancestry frequency (excluding Mixed and Other) |
+| `AR.R` | Plots for the carrier frequency and NC P/LPs count of autosomal recessive (AR) and autosomal dominant (AD) genes across ancestries. |
+| `Distribution_for_ACMG_classification.R` | Plots for the frequency of NC P/LP carriers and count of NC P/LPs across ancestries. |
+| `Distribution_for_genes.R` | Plots for the frequency/count of NC P/LP carriers in each ancestry among the ACMG 59 genes and the top 10% genes (ranked by sums of all defined ancestry frequencies, excluding Mix and Other). |
 
 ### `VariantImpactOnExp/`
 
@@ -59,11 +59,11 @@ Analyses assessing the impact of NC P/LP variants on gene expression.
 
 | Script | Description |
 |--------|-------------|
-| `VariantImpactOnExp.R` | Identify genes whose expression is significantly affected by NC P/LPs |
-| `VariantImpactOnExp_Plot.R` | Volcano plots for variant–expression associations |
-| `PlotPercentileExp.R` | Percentile expression distributions for NC P/LP carriers in specific cancer types; node color encodes variant function, border color encodes ASE enrichment status |
-| `PlotPercentileExp_DiffExpSplitCount.R` | Proportion of sample-variants across expression quantile bins stratified by predicted variant function and ASE status |
-| `PlotPercentileExp_DiffExpSplitCount_GeneInfo.R` | Detailed sample-variant–level annotations for genes with significant or suggestive expression effects |
+| `VariantImpactOnExp.R` | Identification of genes whose expression is affected by related NC P/LPs. |
+| `VariantImpactOnExp_Plot.R` | Volcano plots for genes whose expression is affected by related NC P/LPs. |
+| `PlotPercentileExp.R` | Distribution of percentile expression in a specific cancer at NC P/LP carriers of genes whose expression is significantly/suggestively impacted by NC P/LPs or enriched with significant ASE variants. Color of node represents variant type. Color of node edge represent ASE enrichment status. |
+| `PlotPercentileExp_DiffExpSplitCount.R` | Count/Proportion of sample-variants across expression splits vs predicted variant function/ASE status for genes whose expression is significantly/suggestively impacted by NC P/LPs or enriched with significant ASE variants. |
+| `PlotPercentileExp_DiffExpSplitCount_GeneInfo.R` | Detailed information for sample-variants of for genes whose expression is significantly/suggestively impacted by NC P/LPs or enriched with significant ASE variants. |
 
 ### `gnomad/`
 
@@ -71,11 +71,11 @@ Comparison of TCGA variant frequencies with the Genome Aggregation Database (gno
 
 | Directory / Script | Description |
 |--------------------|-------------|
-| `bcftools/` | Shell commands for extracting variants of interest from gnomAD VCFs using `bcftools` |
-| `bcftools_process/process.R` | Preprocessing of extracted gnomAD variant annotations |
-| `bcftools_process/plot_ancestry.R` | Frequency and count distributions of ACMG-classified variants across gnomAD ancestries |
-| `ancestry_variant_distribution/count.R` | Ancestry-matched variant counts between TCGA and gnomAD (gnomAD European = FIN ∪ NFE); population-specific NC P/LPs are indicated by triangles, with top variants labeled |
-| `ancestry_variant_distribution/statistic.R` | Correlation analyses of variant frequencies between matched TCGA and gnomAD ancestries |
+| `bcftools/` | Command of bcftools to extract information of variant of interests from gnomad dataset. |
+| `bcftools_process/process.R` | Preprocess the information of variant of interests from gnomad dataset. |
+| `bcftools_process/plot_ancestry.R` | Plot for the frequency/count of ACMG status/genes across different ancestries. |
+| `ancestry_variant_distribution/count.R` | Variant count of predisposing variants in the matched gnomAD ancestry (European of gnomAD is the union of FIN and NFE populations). TCGA population-specific NC P/LPs, exclusively found in a specific TCGA ancestry, are shown as a triangle. Top NC P/LP or top TCGA ancestry-specific NC P/LP, ranked by allele counts in TCGA or gnomAD, was labelled. |
+| `ancestry_variant_distribution/statistic.R` | (Significance of) Correlations of variant frequencies in the matched ancestries between TCGA and gnomAD. |
 
 ---
 
